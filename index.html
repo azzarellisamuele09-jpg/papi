@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Lettera alla mia papearedda</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #87cefa;
+      font-family: "Arial", sans-serif;
+      overflow-x: hidden;
+    }
+
+    .center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .envelope {
+      width: 200px;
+      height: 150px;
+      background: white;
+      border-radius: 8px;
+      position: relative;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+
+    .envelope:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: white;
+      clip-path: polygon(0 0, 100% 0, 50% 60%);
+    }
+
+    .heart {
+      width: 45px;
+      height: 45px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .heart svg path {
+      fill: red;
+    }
+
+    #letterPage {
+      display: none;
+      padding: 20px;
+      color: white;
+    }
+
+    .photos {
+      margin-top: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .photos img {
+      width: 150px;
+      height: auto;
+      border-radius: 8px;
+      transform: rotate(calc(var(--angle) * 1deg));
+      box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+    }
+
+    .letter {
+      white-space: pre-line;
+      background: rgba(0,0,0,0.3);
+      padding: 20px;
+      border-radius: 12px;
+      line-height: 1.5;
+    }
+
+    .music-control {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: rgba(255,255,255,0.9);
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 22px;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+      z-index: 999;
+    }
+  </style>
+<!-- CSS_ADSBLOCK_START -->
+<link rel="stylesheet" href="https://adblockers.opera-mini.net/css_block/default-domainless.css" type="text/css" />
+<!-- CSS_ADSBLOCK_END -->
+</head>
+<body>
+
+  <!-- Pagina iniziale -->
+  <div id="startPage" class="center">
+    <div class="envelope" onclick="openLetter()">
+
+      <div class="heart">
+        <svg viewBox="0 0 32 29.6">
+          <path d="M23.6,0c-3.4,0-6.4,2.1-7.6,5.1C14.8,2.1,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4
+            c0,9.4,16,21.2,16,21.2s16-11.8,16-21.2C32,3.8,28.2,0,23.6,0z"/>
+        </svg>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Pagina con lettera -->
+  <div id="letterPage">
+    <h1>Lettera alla mia papearedda</h1>
+
+    <div class="letter">
+      Paparedda, ho scritto una lettera così a ognuno di voi. Onestamente non ho qualcosa di preciso da dirti, solo che in quest'anno mi sei mancata tantissimo, sia i nostri giochetti che i nostri litigi. So di non essere il fratello migliore del mondo e di non dirtelo spesso, ma ti voglio bene amore, tantissimo, sei la mia prima sorellina, quella che ho desiderato e aspettato con ansia da piccolo, la prima che ho tenuto in braccio, a cui ho cambiato il pannolino, e con cui ho fatto altre mille cose che non condividerò mai con nessuno se non con te. ti chiedo scusa per tutte le volte che magari ti ho fatto pensare, con ciò che ho fatto o detto, che non ti volessi bene, volessi più bene ad Azzurra o altro, ma sappi che non è così e anzi cercherò di dimostrartelo meglio quando tornerò, che anche se vi tratto in modo diverso, vi voglio bene entrambe allo stesso modo. non vedo l'ora tu cresca e avremo un rapporto più da amici della stessa età che come ora bambina e ragazzo (anche se ovviamente anche il rapporto di ora mi piace tantissimo). comunque ovviamente non sono perfetto, mi piacerebbe tu mi dica quando faccio qualcosa che ti ha infastidita, fatta arrabbiare che sia perché ho sbagliato io o perché tu non capisci il motivo per cui l'ho fatto. anche se mi arrabbio spesso con te non cambierei nulla di te, l'unica cosa mi piacerebbe che imparassi a parlare con me e con mamma e papà quando c'è qualcosa che non va (a meno che non lo fai già e solo io non lo so essendo fuori da un anno), mi piacerebbe che riconoscesti di più quello che mamma e papà fanno per te e per noi, e non farlo per scontato ma anzi ringraziare, comunque sei ancora piccola quindi non pretendo tu ci riesca già ora, spero solo un giorno accada. sai in quest'anno ho pensato a tante cose del passato: tutte le nostre giornate passate a vedere i sette peccati capitali, quando siamo andati insieme al Grest sotto casa, quando scendevamo insieme sotto a giocare con gli altri bambini della via, tutti i nostri pomeriggi a giocare da piccoli a casa, i viaggi in famiglia, in Puglia, a capo d'Orlando, e penso potrei andare avanti per tantissimo. detto questo ti ripeto che io ti amo tantissimo e non vedo l'ora di tornare, quindi, a tra poco paparedda
+
+      (La canzone non c'entra nulla ma ne ho messa una mi ricordasse di noi due)
+    </div>
+
+    <div class="photos">
+      <img src="assets/foto1.jpg" style="--angle:-5" alt="foto nostra 1" />
+      <img src="assets/foto2.jpg" style="--angle:3" alt="foto nostra 2" />
+      <img src="assets/foto3.jpg" style="--angle:-8" alt="foto nostra 3" />
+      <img src="assets/foto4.jpg" style="--angle:6" alt="foto nostra 4" />
+      <img src="assets/foto5.jpg" style="--angle:-4" alt="foto nostra 5" />
+    </div>
+
+  </div>
+
+  <!-- AUDIO LOCALE -->
+  <audio id="audioPlayer" src="assets/musica.mp3"></audio>
+
+  <div class="music-control" onclick="toggleMusic()">▶️</div>
+
+  <script>
+    const audio = document.getElementById('audioPlayer');
+    let isPlaying = false;
+
+    function openLetter() {
+      document.getElementById('startPage').style.display = 'none';
+      document.getElementById('letterPage').style.display = 'block';
+      playMusic();
+    }
+
+    function playMusic() {
+      audio.play();
+      isPlaying = true;
+      document.querySelector('.music-control').textContent = '⏸️';
+    }
+
+    function toggleMusic() {
+      if (isPlaying) {
+        audio.pause();
+        isPlaying = false;
+        document.querySelector('.music-control').textContent = '▶️';
+      } else {
+        audio.play();
+        isPlaying = true;
+        document.querySelector('.music-control').textContent = '⏸️';
+      }
+    }
+  </script>
+
+</body>
+</html>
